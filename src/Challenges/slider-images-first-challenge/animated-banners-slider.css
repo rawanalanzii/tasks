@@ -1,0 +1,27 @@
+.anim .path {
+    stroke-dasharray: 100;
+    /* Define the length of dashes and gaps */
+    stroke-dashoffset: 100;
+    /* Offset for the dash pattern */
+    stroke-width: 0.001;
+    animation: AnimatedBannersCardSlider 0.5s ease-in forwards;
+}
+
+@keyframes AnimatedBannersCardSlider {
+    0% {
+        stroke-dashoffset: 100;
+        stroke-width: 0.001;
+        stroke: #13082f;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-width: 0.05;
+        stroke: #13082f;
+    }
+}
+
+/* var(--stroke-color);
+:root {
+    --stroke-color: #13082f;
+} */
